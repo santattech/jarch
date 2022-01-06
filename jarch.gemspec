@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.files = Dir['lib/**/*.rb'] + Dir['bin/*']
   s.files += Dir['[A-Z]*']
   s.files.reject! { |fn| fn.include? "CVS" }
-  s.require_paths    = ['lib']
+  s.require_paths    = ['lib', 'spec']
   s.homepage         = ''
   s.license          = 'Nonstandard'
-  s.executables      = ['jarch.rb'] #s.files.grep(%r{^bin/jarch.rb}) { |f| File.basename(f) }
+  s.executables      = ['jarch_test.rb'] #s.files.grep(%r{^bin/jarch.rb}) { |f| File.basename(f) }
   
   s.add_development_dependency 'warbler'
 end

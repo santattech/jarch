@@ -3,6 +3,8 @@ With the help of jruby and warble gem we can transform our ruby piece into a jav
 
 I have taken some idea from this [blog](https://notepad.onghu.com/2021/jruby-win-day2-creating-jar-files/)
 
+Command to create jar: jruby -S warble compiled runnable jar
+
 During the creation of jar file, I did not face any issue. I tried to run the jar file by running the command
 `java -jar jarch.jar` and it returns the expected output.
 
