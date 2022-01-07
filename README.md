@@ -106,3 +106,13 @@ Factorial of 50 is 3041409320171337804361260816606476884437764156896051200000000
 
 ```
 This time success! :sleeping:
+
+### Next step: addding spec and run with jar file
+
+I used RSpec and added a spec folder. I added the jarch_test.rb file which help me to execute the specs.
+In the gemspec I chaned the entry point from jarch.rb to jarch_test.rb
+
+In the jarch_test.rb I have added require_relative each spec file so that the jar file can be executed independently.
+Tested with:
+  to prepare: jruby -S warble runnable jar
+  to execute: java -jar jarch.jar
